@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #ff6961;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ff4136;
+}
+
+.heart {
+    font-size: 100px;
+    vertical-align: middle;
+    transition: color 0.3s;
+}
+
+.message {
+    display: none;
+    font-size: 24px;
+    color: #ff69b4;
+    transition: color 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .heart {
+        font-size: 60px;
+    }
+
+    .message {
+        font-size: 18px;
+    }
+}
